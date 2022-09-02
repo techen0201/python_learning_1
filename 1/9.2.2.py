@@ -21,14 +21,19 @@ class MyNumbers:
         self.a=1
         return self
     def __next__(self):
-        self.a
-        self.a+=1
-        return self.a
+        if self.a<=20:
+            x=self.a
+            self.a
+            self.a+=1
+            return x
+        else:
+            raise StopIteration
+
 if __name__=='__main__':
     #inter1()
     #inter2()
     myclass=MyNumbers()
     myiter=iter(myclass)
-    print(next(myiter))
-    print(next(myiter))
-    print(next(myiter))
+    print([x for x in myiter])
+    for x in myiter:
+        print(oct(x),end=' ')

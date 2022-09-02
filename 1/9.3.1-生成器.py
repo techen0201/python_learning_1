@@ -1,6 +1,5 @@
 #生成器
 import sys
-import numpy as np
 def fibonacci(n):
     a,b,count=0,1,0
     #方法1

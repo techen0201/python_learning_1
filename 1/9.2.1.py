@@ -14,4 +14,23 @@ print(new_dict)
 
 new_dict1={x:x**2 for x in [2,4,6]}
 print(new_dict1)
-print(type(new_names))
+print(type(new_dict1))
+
+#set推导式
+new_set={x**2 for x in [1,2,3]}
+print(new_set)
+
+a={x for x in 'abracadabra' if x not in 'abc'}
+print(a)
+
+#tuple推导式
+
+b=(x for x in range(1,10))
+print(b)
+print(tuple(b))
+
+#if else 推导式
+
+list1=['Python','test1','test2']
+list2=[word if word.startswith('P') else word.upper() for word in list1]
+print(list2)

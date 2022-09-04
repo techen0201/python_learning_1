@@ -17,10 +17,17 @@ def fibonacci(n):
         yield a
         a,b=b,a+b
     '''
+def printinfo(arg1,*,c):
+    print("输出：")
+    print(arg1)
+    print(c)
 if __name__=='__main__':
+   '''
     f=fibonacci(10)
     while True:
         try:
             print(next(f),end=' ')
         except StopIteration:
             sys.exit()
+    '''
+   printinfo(10,c=70)

@@ -67,7 +67,61 @@ def myfun8():
             transposed_row.append(row[i])
         transposed.append(transposed_row)
     print(transposed)
+def myfun9():
+    tuple1=12345,54321,'abcde'
+    print(tuple1)
+    t=tuple1,(1,2,3,4,5)
+    print(t)
+def myfun10():
+    basket={'apple','orange','apple','pear','orange','banana'}
+    print(basket)
+    print('apple'in basket)
+    print('crabgrass'in basket)
+def myfun11():
+    a = set('abracadabra')
+    b=set('alacazam')
+    print(a)
+    print(b)
+    print(a|b)
+    print(a&b)
+    print(a-b)
+    print(a^b)
+def myfun12():
+    a = set('abracadabra')
+    b = set('alacazam')
+    c={x for x in a if x not in 'abc'}
+    print(c)
+#字典
+def myfun13():
+    tel={'jack':4098,'sape':4139}
+    tel['guido']=4127
+    print(tel)
+    print(tel['jack'])
+    del tel['jack']
+    print(tel)
+    tel['irv']=4127
+    print(tel)
+    print(list(tel.keys()))
+    print(sorted(tel.keys()))
+def myfun14():
+    a=dict([('sape',4139)])
+    print(a)
+def myfun15():
+    for i,v in enumerate(['tic','tac','toe']):
+        print(i,v)
 
+
+    questions=['name','quest','favorite color']
+    answers=['lancelot','the holly grail','blue']
+    for q,a in zip(questions,answers):
+        print('What is your {0}? It is {1}'.format(q,a))
+def myfun16():
+    for x in reversed(range(1,10,2)):
+        print(x)
+    del x
+    basket=['apple','orange','apple','pear','orange','banana']
+    for x in sorted(set(basket)):
+        print(x)
 if __name__=="__main__":
     #myfun1()
     #myfun2()
@@ -76,4 +130,13 @@ if __name__=="__main__":
     #myfun5()
     #myfun6()
     #myfun7()
-    myfun8()
+    #myfun8()
+    #myfun9()
+    #myfun10()
+    #myfun11()
+    #myfun12()
+    #myfun13()
+    #myfun14()
+    #myfun15()
+    myfun16()
+

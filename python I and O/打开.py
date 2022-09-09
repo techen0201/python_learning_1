@@ -1,0 +1,12 @@
+fo=open('foo.txt','r')
+print(fo.name)
+print(fo.closed)
+print(fo.mode)
+str=fo.read()
+print(str)
+fo.write('www.runoob.com\nwelcome!')
+#print(fo.softspace)
+
+print(str)
+fo.close()
+print(fo.closed)

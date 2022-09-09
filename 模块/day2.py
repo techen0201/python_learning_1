@@ -1,6 +1,7 @@
 Money=2000
 def AddMoney():
-    money+=1
+    global Money
+    Money+=1
 
 print(Money)
 AddMoney()
